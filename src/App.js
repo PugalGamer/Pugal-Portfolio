@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Head />
-      <div style={{ marginTop: 90 }} data-aos="fade-up">
+      <div style={{ marginTop: 90 }} data-aos="fade-down">
         <Home />
       </div>
       <div data-aos="fade-up">

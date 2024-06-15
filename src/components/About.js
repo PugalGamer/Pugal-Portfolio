@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import pugal from "../assets/aboutpugal.png";
+import Aos from "aos";
 
 export default function About() {
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
   return (
     <div className="bg-dark text-light p-5" id="about">
       <h1 className="mb-4">About Me!</h1>
@@ -32,36 +36,42 @@ export default function About() {
             alt="Pugalendhi"
             src={pugal}
             className="img-fluid rounded-circle mb-3"
+            data-aos="zoom-in"
           />
           <h4>Skills</h4>
           <Row>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-danger" className="w-100">
+              <Button variant="outline-danger" className="w-100" 
+              data-aos="flip-left">
                 JAVA
               </Button>
             </Col>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-light" className="w-100">
+              <Button variant="outline-light" className="w-100" 
+              data-aos="flip-left">
                 HTML
               </Button>
             </Col>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-primary" className="w-100">
+              <Button variant="outline-primary" className="w-100"
+              data-aos="flip-left">
                 CSS
               </Button>
             </Col>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-warning" className="w-100">
+              <Button variant="outline-warning" className="w-100"
+              data-aos="flip-left">
                 Js
               </Button>
             </Col>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-info" className="w-100">
+              <Button variant="outline-info" className="w-100"
+              data-aos="flip-left">
                 React.js
               </Button>
             </Col>
             <Col lg={2} md={2} sm={3} xs={4} className="mb-2">
-              <Button variant="outline-success" className="w-100">
+              <Button variant="outline-success" className="w-100" data-aos="flip-left">
                 MERN
               </Button>
             </Col>

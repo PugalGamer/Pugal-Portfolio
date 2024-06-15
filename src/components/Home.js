@@ -10,7 +10,6 @@ export default function Home() {
         <Row className="align-items-center">
           <Col lg={6} md={12} className="text-center mb-5">
             <Lottie
-            
               options={{
                 loop: true,
                 autoplay: true,
@@ -52,7 +51,7 @@ export default function Home() {
               Software Engineer
             </h3>
             <Button
-            className="mb-3"
+              className="mb-3"
               variant="outline-info"
               size="lg"
               href="#about"

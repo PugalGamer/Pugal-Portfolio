@@ -1,21 +1,33 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 
 export default function Experience() {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="p-5" id="experience">
       <h1>Experience</h1>
-      <Row style={{ textAlign: "justify" }} className="mt-5">
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+      <Row className="mt-5">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3"
             style={{ backgroundColor: "#E3FDFD", height: "100%" }}
+            data-aos="flip-up"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex text-center">
                 Software Engineer
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{ textAlign: "justify" }}>
                 Presently working as a Software Engineer at
                 <strong>
                   GRAVITYKEY TECHNOLOGIES PRIVATE LIMITED, Chennai.
@@ -25,16 +37,23 @@ export default function Experience() {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3"
             style={{ backgroundColor: "#DBE2EF", height: "100%" }}
+            data-aos="flip-up"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex text-center">
                 Junior Software Developer-Intern
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{ textAlign: "justify" }}>
                 Worked as a Junior Software Developer Intern at
                 <strong>
                   ROCKG MICRO TECHNOLOGY (INDIA) PRIVATE LIMITED, Trichy.
@@ -45,16 +64,23 @@ export default function Experience() {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3"
             style={{ backgroundColor: "#BDCDD6", height: "100%" }}
+            data-aos="flip-up"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex text-center">
                 MCA
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{ textAlign: "justify" }}>
                 Completed Master of Computer Applications (MCA) at
                 <strong> Bishop Heber College, Trichy.</strong> Demonstrated
                 leadership qualities as the President of the MCA department.
@@ -65,42 +91,65 @@ export default function Experience() {
       </Row>
       <Row className="mt-3">
         <h3>Projects</h3>
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2 bg-info"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3 bg-info"
             style={{ height: "100%" }}
+            data-aos="flip-down"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex text-center">
                 <h5>Project 1</h5>
               </Card.Title>
-              <Card.Text>Task Management App</Card.Text>
+              <Card.Text style={{}}>Task Management App</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3 px-0"
             style={{ backgroundColor: "#FFA559", height: "100%" }}
+            data-aos="flip-down"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex ">
                 <h5>Project 2</h5>
               </Card.Title>
               <Card.Text>MERN CRUD APP</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} md={6} sm={12} xs={12} className="mb-4">
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          className="mb-4 px-lg-2 px-md-2 px-sm-1 px-0"
+        >
           <Card
-            className="border-0 shadow-sm p-2"
+            className="border-0 shadow-sm p-3 p-sm-3 p-md-3 p-lg-3 px-0"
             style={{ backgroundColor: "#A7FF83", height: "100%" }}
+            data-aos="flip-down"
           >
             <Card.Body>
-              <Card.Title className="justify-content-center d-flex">
+              <Card.Title className="justify-content-center d-flex text-center">
                 <h5>Project 3</h5>
               </Card.Title>
-              <Card.Text>User and Admin particular pages Google Auth</Card.Text>
+              <Card.Text style={{ textAlign: "justify" }}>
+                User and Admin particular pages Google Auth
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>

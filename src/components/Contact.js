@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Button, Card, Col, Form, Row } from "react-bootstrap";
 import contact from "../assets/AnimationCantact.json";
 import Lottie from "react-lottie";
 import { ToastContainer, toast } from "react-toastify";
@@ -20,7 +20,7 @@ export default function Contact() {
 
     if (!userName || !userEmail || !userNumber || !userMessage) {
       toast.warning("Please fill in all the fields", {
-        position: "bottom-right",
+        position: "bottom-center",
       });
       return;
     }
@@ -31,7 +31,7 @@ export default function Contact() {
       })
       .then(
         () => {
-          toast.success("Success!", { position: "bottom-right" });
+          toast.success("Success!", { position: "bottom-center" });
           console.log("SUCCESS!");
           form.current.reset(); // Clear the form fields
         },
@@ -46,8 +46,8 @@ export default function Contact() {
     <div className="bg-light p-5" id="contact">
       <h1>Contact Me!</h1>
 
-      <Row className="align-items-center">
-        <Col lg={6} md={12} sm={12} xs={12} className="mb-4 mb-lg-0">
+      <Row className="align-items-center mt-3">
+        <Col lg={7} md={12} sm={12} xs={12} className="mb-4 mb-lg-0">
           <div className="d-flex justify-content-center">
             <Lottie
               options={{
@@ -61,50 +61,54 @@ export default function Contact() {
             />
           </div>
         </Col>
-        <Col lg={6} md={12} sm={12} xs={12}>
-          <Form
-            className="m-4 p-5 shadow"
-            style={{ borderRadius: 15 }}
-            ref={form}
-            onSubmit={sendEmail}
+        <Col lg={5} md={12} sm={12} xs={12}>
+          <Card
+            className="shadow border-0  bg-light p-3 p-lg-4 p-md-4 p-sm-5"
+            style={{ borderRadius: 10 }}
           >
-            <h5>Get in Touch!</h5>
-
-            <Form.Control
-              type="text"
-              placeholder="Your Name"
-              className="mb-3"
-              name="user_name"
-            />
-            <Form.Control
-              type="email"
-              placeholder="Your Email"
-              className="mb-3"
-              name="user_email"
-            />
-            <Form.Control
-              type="number"
-              placeholder="Mobile Number"
-              className="mb-3"
-              name="number"
-            />
-            <Form.Control
-              as="textarea"
-              placeholder="Message"
-              className="mb-3"
-              name="message"
-            />
-            <Button
-              variant="info"
-              size="lg"
-              className="mt-3 w-100"
-              value="Send"
-              type="submit"
+            <Form
+              className=" p-lg-3 p-md-5 p-sm-4 px-2"
+              ref={form}
+              onSubmit={sendEmail}
             >
-              Send
-            </Button>
-            <ToastContainer />
-          </Form>
+              <h5>Get in Touch!</h5>
+
+              <Form.Control
+                type="text"
+                placeholder="Your Name"
+                className="mb-3"
+                name="user_name"
+              />
+              <Form.Control
+                type="email"
+                placeholder="Your Email"
+                className="mb-3"
+                name="user_email"
+              />
+              <Form.Control
+                type="number"
+                placeholder="Mobile Number"
+                className="mb-3"
+                name="number"
+              />
+              <Form.Control
+                as="textarea"
+                placeholder="Message"
+                className="mb-3"
+                name="message"
+              />
+              <Button
+                variant="info"
+                size="lg"
+                className="mt-3 w-100"
+                value="Send"
+                type="submit"
+              >
+                Send
+              </Button>
+              <ToastContainer />
+            </Form>
+          </Card>
         </Col>
       </Row>
     </div>
