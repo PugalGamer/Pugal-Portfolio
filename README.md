@@ -1,5 +1,5 @@
 https://pugal-portfolio.vercel.app/
-git remote add origin https://github.com/PugalGamer/portfolio.git
+git remote add origin https://github.com/PugalGamer/Pugal-Portfolio.git
 git add .
 git commit -m "Changes"
 git push -u origin main
