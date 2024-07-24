@@ -1,4 +1,9 @@
 https://pugal-portfolio.vercel.app/
+git remote add origin https://github.com/PugalGamer/portfolio.git
+git add .
+git commit -m "Changes"
+git push -u origin main
+
 
 ![Screenshot (10)](https://github.com/PugalGamer/Pugal-Portfolio/assets/151002950/a4c5a4ea-327c-49de-9b90-77688e6b1927)
 ![Screenshot (11)](https://github.com/PugalGamer/Pugal-Portfolio/assets/151002950/ed438311-24ed-4ce9-ba8d-a3bb8cf48fd2)
