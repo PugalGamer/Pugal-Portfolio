@@ -28,11 +28,11 @@ export default function Experience() {
                 Software Engineer
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                Presently working as a Software Engineer at
+                Presently working as a Trainee Engineer at
                 <strong>
-                  GRAVITYKEY TECHNOLOGIES PRIVATE LIMITED, Chennai.
+                  VAKEN TECHNOLOGIES PRIVATE LIMITED, Trichy.
                 </strong>
-                Currently involved in various projects.
+                
               </Card.Text>
             </Card.Body>
           </Card>
