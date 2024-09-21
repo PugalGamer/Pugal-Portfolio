@@ -25,7 +25,7 @@ export default function Experience() {
           >
             <Card.Body>
               <Card.Title className="justify-content-center d-flex text-center">
-                Software Engineer
+                Fresher 
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
                 Actively seeking as Developer Fresher 
