@@ -28,9 +28,9 @@ export default function Experience() {
                 Software Engineer
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                Presently working as a Trainee Engineer at
+                Actively seeking as Developer Fresher 
                 <strong>
-                  VAKEN TECHNOLOGIES PRIVATE LIMITED, Trichy.
+                intrested in Front end developer, MERN STACK Developer.
                 </strong>
                 
               </Card.Text>
