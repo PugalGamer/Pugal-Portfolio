@@ -28,9 +28,9 @@ export default function Experience() {
                 Fresher 
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                Actively seeking as Developer Fresher 
+                Actively seeking as Developer
                 <strong>
-                intrested in Front end developer, MERN STACK Developer.
+                intrested in Front end, MERN STACK.
                 </strong>
                 
               </Card.Text>
